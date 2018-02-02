@@ -1,0 +1,16 @@
+<FilesMatch "^\.">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+    </IfModule>
+</FilesMatch>
+
+DirectoryIndex index.php index.html index.htm
+
+Options -Indexes
+
+# BEGIN WordPress
+
+# END WordPress

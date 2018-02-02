@@ -1,0 +1,24 @@
+/vendor/
+
+# WP core
+/public/wp/
+
+# WP config
+/public/wp-config.php
+
+# WP content
+/public/wp-content/languages/
+/public/wp-content/uploads/
+
+# WP mu-plugins
+/public/wp-content/mu-plugins/*
+
+# WP plugins
+/public/wp-content/plugins/*
+!/public/wp-content/plugins/index.php
+# !/public/wp-content/plugins/<plugin-name>/
+
+# WP themes
+/public/wp-content/themes/*
+!/public/wp-content/themes/index.php
+# !/public/wp-content/themes/<theme-name>/
