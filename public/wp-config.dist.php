@@ -79,13 +79,13 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
-/** Custom site url */
-define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp');
+/** URLs */
 define('WP_HOME', 'http://' . $_SERVER['HTTP_HOST']);
+define('WP_SITEURL', WP_HOME . '/wp');
 
 /** Custom wp-content directory */
 define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content');
-define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content');
+define('WP_CONTENT_URL', WP_HOME . '/wp-content');
 
 /** Disable auto updates */
 define('AUTOMATIC_UPDATER_DISABLED', true);
